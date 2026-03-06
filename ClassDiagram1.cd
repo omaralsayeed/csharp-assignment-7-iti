@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="D7Task.Abstractions.Exam">
+    <Position X="3" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAKAAAgQUgIAAAAAAAAAgAMAGEAAgAAAAARg=</HashCode>
+      <FileName>Abstractions\Exam.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Subject" />
+      <Property Name="Mode" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Questions" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="D7Task.Core.PracticeExam">
+    <Position X="1.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEAAAAAAAAAA=</HashCode>
+      <FileName>Core\PracticeExam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D7Task.Core.FinalExam">
+    <Position X="4" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEAAAAAAAAAA=</HashCode>
+      <FileName>Core\FinalExam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D7Task.Abstractions.Question">
+    <Position X="11" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAEgAADAQAAAAAAAIBAQAQAAAAAAAA=</HashCode>
+      <FileName>Abstractions\Question.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Answers" />
+      <Property Name="CorrectAnswer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="D7Task.Questions.TrueFalseQuestion">
+    <Position X="9" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Questions\TrueFalseQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D7Task.Questions.ChooseOneQuestion">
+    <Position X="11" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Questions\ChooseOneQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D7Task.Questions.ChooseAllQuestion">
+    <Position X="13.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAACgQCAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Questions\ChooseAllQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D7Task.Models.Answer">
+    <Position X="15" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQEgAAAAAAAAAAAAIAAAAAACAAAABA=</HashCode>
+      <FileName>Models\Answer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="D7Task.Models.MultiSelectAnswer">
+    <Position X="15" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Models\MultiSelectAnswer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D7Task.Models.AnswerList">
+    <Position X="13" Y="8" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAgAAAAAAAACAAAACQAAAAAAAAAAACAAAAAAIA=</HashCode>
+      <FileName>Models\AnswerList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_answers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="D7Task.Core.Student">
+    <Position X="7" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D7Task.Core.Subject">
+    <Position X="7" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEgAAAAAAAAAEAAAgUAAAAAgAAAAAAAAABAAAA=</HashCode>
+      <FileName>Core\Subject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_enrolledStudents" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="D7Task.Core.ExamEventArgs">
+    <Position X="3" Y="8" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\ExamEventArgs.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Subject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="D7Task.Collections.QuestionList">
+    <Position X="9" Y="8" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAgAAAAAAAACAAAAAQAABAAAAAAACCAIEAAAAA=</HashCode>
+      <FileName>Collections\QuestionList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="D7Task.Collections.Repository&lt;T&gt;">
+    <Position X="9" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAgAAAAAAAAAAAQBAQAABAAQAAAAgCAAAAAAAg=</HashCode>
+      <FileName>Collections\Repository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="D7Task.Abstractions.ExamMode">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstractions\ExamMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="D7Task.Abstractions.ExamStatus">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAIAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstractions\ExamStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="D7Task.Abstractions.ExamStartedHandler">
+    <Position X="0.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\ExamStartedDelegate.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
